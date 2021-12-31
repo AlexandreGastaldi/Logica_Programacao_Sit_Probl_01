@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS.COM</title>
+    <script src="js/cadastro_eventos.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+
+    <script>
+        $(function() {
+            $("#calendario").datepicker({
+                dateFormat: 'dd/mm/yy',
+                dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+                dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+                dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+                monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="form p-5">
+        <div class="display-3 text-success text-center">
+            <p>EVENTOS.COM - Seu Cadastro Online de Eventos</p>
+        </div>
+
+        <br><br>
+
+        <section class="text-primary">
+            <p>Qual a Sua Idade?</p>
+            <input class="form" id="idade" type="number">
+
+            <br><br>
+
+            <p>Diga o Nome do Evento</p> 
+            <input class="form" id="nome_evento" type="text">
+
+            <br><br>
+
+            <p>Qual a Data do Evento</p>
+            <input class="form" id="data_evento" type="date">
+
+            <br><br>
+
+            <p>Haverá Quantos Participantes?</p>
+            <input class="form" id="qtd_participante" type="number">
+
+            <br><br>
+
+            <p>Haverá Quantos Palestrantes?</p>
+            <input class="form" id="qtd_palestrante" type="number">
+
+            <br><br>
+
+            <button onclick="cadastrar()">Cadastrar Evento</button>
+        </section>
+    </div>
+
+</body>
+</html>
