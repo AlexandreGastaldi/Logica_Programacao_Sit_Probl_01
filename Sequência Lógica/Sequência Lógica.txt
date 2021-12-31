@@ -1,0 +1,28 @@
+cria função() {
+
+    variável idade = valor de elemento html
+  
+    variável nome = valor de elemento html
+  
+    variável participantes = valor de elemento html
+  
+    variável palestrantes = valor de elemento html
+    
+    variável data_atual = data atual
+  
+    variável data_user = document.getElementById("data_evento").value;  
+  
+    SE (idade do usuário >= 18 E data do evento > data atual E quantidade de participantes < 100) {
+      alerta ("EVENTO CADASTRADO COM SUCESSO!")
+    } SE NÃO SE (idade do usuário < 18) {
+      alerta ("SUA IDADE NÃO PERMITE REALIZAR CADASTRO DE EVENTOS.")
+    } SE NÃO SE (data do evento < data atual) {
+      alerta ("A DATA DO EVENTO NÃO PODE SER ANTERIOR À DATA ATUAL. DESEJA INFORMAR NOVA DATA?")
+    } SE NÃO SE (quantidade de participantes > 100) {
+      alerta ("A QUANTIDADE MÁXIMA DE PARTICIPANTES FOI EXTRAPOLADA. DESEJA CADASTRAR O EVENTO COM QUANTIDADE MENOR DE PARTICIPANTES?")
+    } SE NÃO {
+      alert("INFELIZMENTE O EVENTO NÃO PODE SER CADASTRADO.")
+    }
+  }
+  
+  
